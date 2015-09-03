@@ -1,0 +1,468 @@
+/* NORMALIZE */
+
+ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+/* CLEARFIX */
+
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+/* BORDER-BOX */
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+/* END OF SETUP STYLES */
+
+/* GOOGLE FONT STYLES */
+
+/*font-family: 'Montserrat', sans-serif;*/
+
+/*font-family: 'Josefin Slab', serif;*/
+
+/*font-family:'Josefin Sans', sans-serif;*/
+
+/*HEADER STYLES*/
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size:14em;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 3px 3px 0 #fece00;
+	margin:0;
+}
+
+h2 {
+	font-size:3em;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 2% 0;
+	font-family: 'Josefin Slab', serif;
+}
+
+h4 {
+	font-weight: 400;
+}
+
+.shrink {
+	font-size:8em;
+}
+
+.also-shrink {
+	font-size:2em;
+}
+
+
+/* BODY STYLES */
+/*
+html {
+	height: 100%;
+}
+*/
+body {
+	background: no-repeat center center fixed;
+	background-color: rgba(251, 238, 182, 0.22);
+	background-blend-mode: lighten;
+	background-size: cover;
+	color: white;
+	font-size: 10px;
+	/*height: 100%;*/
+}
+
+.page-wrapper {
+	max-width: 900px;
+	height: 100%;
+	margin: 0 auto;
+	background: rgba(0, 3, 23, 0.8);
+	padding: 2% 0;
+}
+
+/* SECTION STYLES */
+
+section.form {
+	text-align: center;
+}
+
+section.form,
+section.reveal {
+	padding: 0 8%;
+	font-family:'Josefin Sans', sans-serif;
+	font-size: 1.8em;
+}
+
+.form figure {
+	width: 10%;
+	margin: 5% auto;
+}
+
+.form p {
+	font-size: 1.5em;
+}
+
+form {
+	margin: 6% 0;
+	text-shadow:0 0 10px black;
+}
+
+label h4, 
+form h4 {
+	font-size: 1.3em;
+	color: #ffefac;
+}
+
+/*REVEAL SECTION*/
+
+section.reveal {
+	margin-top: 7%;
+}
+
+h3 {
+	font-size:1.4em;
+}
+
+span.result {
+	color: #ffefac;
+	text-transform: uppercase;
+	letter-spacing: 20;
+}
+
+.reveal figure {
+	width: 100%;
+	margin-bottom: 5%;	
+}
+
+.reveal a {
+	display: block;
+	color:#fece00;
+	text-decoration:none;
+}
+
+.reveal a:visited {
+	color: #E86300;
+}
+
+.reveal a:hover,
+.reveal a:active {
+	color: #02cdda;
+}
+
+.form figure img ,
+.reveal figure img {
+	width: 100%;
+}
+
+.buttonHolder {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.button,
+.new-results,
+.reload {
+	/*height: 30px;*/
+	display: block;
+	margin: 8% auto;
+	border:none;
+	border-radius: 5%;
+	padding: 2% 2% 1.5% 2%;
+	background: rgb(254, 206, 0);
+	color: black;
+	font-weight: bold;
+	font-size: 1.5em;
+	/*line-height: 30px;*/
+	text-transform: uppercase;
+}
+
+.new-results,
+.reload {
+	display: inline-block;
+	font-size: 1em;
+}
+
+.new-results {
+	margin-right: 5%;
+}
+
+.hidden {
+	display: none;
+}	
+
+.reveal a.source {
+	display: inline;
+}	
+
+.reveal figcaption {
+	float: right;
+}
+
+.reveal figcaption a {
+	color:#1d5178;
+	font-size: 14px;
+}
+
+.reveal figcaption a:visited {
+	color:#485f5d;
+}
+
+/* SLIDER STYLES */
+
+.value {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.3em;
+	width: 300px; 
+	margin: 40px auto;
+}
+
+input[type="range"] {
+	display: block;
+	-webkit-appearance: none;
+	background-color: rgba(255, 255, 255, 0.6);
+	width: 50%;
+	height: 5px;
+	border-radius: 5px;
+	margin: 40px auto;
+	/*outline: 0;*/
+	
+	/*The outline is an a11ty feature, and technically should stay if you want the site to be accessible*/
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	/*You'll need to tell webkit you want nothing to do with their default styles by including a -webkit-appearance: none; on both the input and the thumb.*/
+	background-color: #E86300;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 2px solid white;
+	cursor: pointer;
+	transition: .25s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+	background-color: white;
+	border: 2px solid #E86300;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+	background-color: white;
+	border: 2px solid #E86300;
+}
+
+/* RADIO BUTTON STYLES */
+
+div.radio-wrapper {
+	width: 100%;
+}
+
+input[type="radio"] {
+	display:none;
+}
+
+input[type="radio"] + label{
+	font-size: 1.3em;
+	/*text-transform: uppercase;*/
+}
+input[type="radio"] + label span {
+    display:inline-block;
+    width:30px;
+    height:30px;
+    /*margin: 0 1% 0 8%;*/
+    margin-top: 0;
+    margin-right: 2%;
+    margin-bottom: 0;
+    vertical-align:middle;
+    cursor:pointer;
+    -moz-border-radius:  50%;
+    border-radius:  50%;
+    background-color:#E86300;
+    border: 2px solid white;
+    transition: .25s ease-in-out;
+}
+
+input[type="radio"] + label span:not(.no-margin-left) {
+	margin-left: 8%;
+}
+
+input[type="radio"]:checked + label span{
+	background-color:white;
+	border: 2px solid #E86300;
+}
+
+/* FOOTER STYLES */
+
+footer {
+	/*background: rgba(0, 3, 23, 0.8);*/
+	width: 100%;
+	padding: 15px 0;
+}
+
+h5 {
+	text-align: center;
+	/*display: inline-block;*/
+	font-family: sans-serif;
+	font-family: 'Josefin Slab', serif;
+	font-size: 1.6em;
+	text-shadow: 0 0 20px black;
+	/*margin-top: 0;
+	margin-bottom: 15px;*/
+}
+
+a {
+	text-decoration: none;
+	color:white;
+}
+
+a:hover {
+	color:rgb(254, 206, 0);
+}
+
+/* RESPONSIVE STYLES*/
+
+@media (max-width:980px) {
+	body {
+		font-size:8px;
+	}
+	.page-wrapper {
+		max-width: 600px;
+	}
+	input[type="range"]::-webkit-slider-thumb {
+		width: 25px;
+		height: 25px;
+	}
+	input[type="radio"] + label span {
+	    width:25px;
+	    height:25px;
+	}
+	label.nature,
+	label.culture, 
+	label.both {
+		font-size:1.5em;
+	}
+	h1 {
+		font-size:12em;
+	}
+
+	.form figure {
+		width: 15%;
+		margin: 5% auto 8% auto;
+	}
+
+	.button,
+	.new-results,
+	.reload {
+		margin: 12% auto;
+	}
+
+	.new-results {
+		margin-right: 8%;
+	}
+}
+
+@media (max-width:670px) {
+	
+	h1 {
+		font-size:8.5em;
+	}
+	.page-wrapper {
+		max-width: 400px;
+	}
+
+	.form figure {
+		width: 18%;
+	}
+}
+
+@media (max-width:480px) {
+
+	h1 {
+		font-size:6em;
+		margin-bottom: 5%;
+	}
+
+	h2 {
+		font-size: 2.5em;
+		margin-bottom: 7%;
+	}
+	.reveal h3 {
+		margin-top: 18%;
+	}
+	.page-wrapper {
+		max-width: 300px;
+	}
+
+	.form figure {
+		width: 20%;
+	}
+
+	input[type="range"] {
+		width: 70%;
+	}
+
+	.value {
+		width: 70%;
+	}
+
+	div.radio-wrapper {
+		width: 40%;
+		/*display: inline;*/
+		text-align: left;
+		margin: 0 auto;
+	}
+
+	input[type="radio"] + label{
+		display: block;
+		margin: 5% auto; 
+	}
+
+	.form form input[type="radio"] + label span {
+		margin-left: 0%;
+		margin-right: 7%;
+	}
+
+	.form form label.nature,
+	.form form label.culture, 
+	.form form label.both {
+		margin-bottom: 20%;
+	}
+
+	.button {
+		font-size: 2em;
+		padding: 4% 5% 2% 5%;
+	}
+
+	.new-results,
+	.reload {
+		display: block;
+		margin: 10% auto;
+		font-size: 1em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

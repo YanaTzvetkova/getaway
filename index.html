@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Getaway: Toronto Edition</title>
+	<link rel="stylesheet" type="text/css" href="Styles/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Josefin+Slab|Montserrat:400' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="Images/windingroad.png">
+</head>
+<body>
+	<!-- Background image sources:
+	"dscn8184.jpg", - https://deepfriar.wordpress.com/2010/10/16/searching-the-back-roads-of-ontario-for-the-last-few-fall-colors/
+	"4.jpg", - http://photo.sf.co.ua/id13
+	"4633878864_8f7025d19d_b.jpg",  - https://www.flickr.com/photos/canadiancampbells/4633878864
+	"RockCut-1280.jpg", - http://www.muskokablog.com/?s=minett
+	"Hwy_129_Ontario.JPG", - https://commons.wikimedia.org/wiki/File:Hwy_129_Ontario.JPG
+	"winterroad-1280.jpg" - http://www.muskokablog.com/2008/11/24/winter-road/ -->
+	<div class="page-wrapper clearfix">
+		<header>
+			<h1 class="">Getaway</h1>
+			<h2 class="">&bull; Toronto Edition &bull;</h2>
+		</header>
+		<section class="form">
+			<figure><img src="Images/windingroad.png"></figure>
+			<p>Sometimes, you just need to get out of the city.</p>
+			<p>Find your perfect destination!</p>
+			<form action="">
+				<label for="driving-time" class="driving-time"><h4>How many hours are you willing to drive to get there?</h4></label>
+				<input type="range" id="driving-time" name="driving-time" min="1" max="5" step="1" value="1">
+				<div class="value">1</div>
+				<h4>What floats your boat?</h4>
+				<div class="radio-wrapper">
+					<input type="radio" id="nature" class="nature" name="nature-culture" value="nature">
+					<label for="nature" class="nature"><span class="no-margin-left"></span>nature</label>
+					<input type="radio" id="culture" class="culture" name="nature-culture" value="culture">
+					<label for="culture" class="culture this-label"><span></span>culture</label>
+					<input type="radio" id="both" class="both" name="nature-culture" value="both">
+					<label for="both" class="both this-label"><span></span>both</label>
+				</div>
+				<input type="submit" class="button" value="submit">
+			</form>
+		</section>
+		<section class="reveal hidden">
+			<h3>Why not visit <span class="result"></span> ?</h3>
+			<figure><img src="" alt="">
+			<figcaption><a href="" class="image_src"></a></figcaption></figure>
+			<p class="natureDescription"></p>
+			<p class="cultureDescription"></p><span>Source: <a class="source" href="" target="_blank"></a></span>
+			<a class="link1" href="" target="_blank"></a>
+			<a class="link2" href=""></a>
+			<div class="buttonHolder">
+				<input type="submit" class="new-results" value="Suggest another">
+				<input type="submit" class="reload" value="Start over">
+			</div> <!-- /.buttonHolder -->	
+
+		</section>	
+	 	<footer>
+			<h5>&copy; <a href="http://yanatzv.com/" target="_blank">Yana Tzvetkova</a> & <a href="http://anyacraig.com/" target="_blank">Anya Craig</a></h5>
+		</footer>
+	</div> <!-- /.page-wrapper -->
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="JavaScript/script.js"></script>
+</body>
+</html>
