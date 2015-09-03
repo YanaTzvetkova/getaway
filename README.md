@@ -10,7 +10,7 @@ The requirements were:
  2. Interact with the DOM (HTML) using events (such as a click)
  3. Take input from the user
  4. Update and edit HTML with jQuery
- 5. Nice looking and responsive HTML + CSS to go along with jQuery (think portfolio piece) 
+ 5. Nice looking and responsive HTML + CSS to go along with jQuery
  6. It should be using the latest techniques learned in class.
     - JavaScript
     - jQuery
